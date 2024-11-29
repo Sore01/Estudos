@@ -1,0 +1,41 @@
+package com.mycompany.tiposprimitivos;
+
+/**
+ *
+ * @author EROS
+ */
+public class TiposPrimitivos {
+
+    public static void main(String[] args) {
+        
+        String nome = "Eros";
+        float nota = 8.5f;
+        // %s = String 
+        // %¨.2f = numero de zeros no numero
+        System.out.format("Sua nota de %s é %.2f" , nome, nota);
+    }
+}
+
+====================================================================
+
+package com.mycompany.tiposprimitivos;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author EROS
+ */
+public class TiposPrimitivos {
+
+    public static void main(String[] args) {
+        
+        Scanner teclado = new Scanner (System.in);
+        System.out.print("Digite o nome do aluno: ");
+        String nome = teclado.nextLine();
+        System.out.print("Digite a nota do aluno: ");
+        float nota = teclado.nextFloat();
+        System.out.format("Sua nota de %s é %.1f" , nome, nota);
+        
+    }
+}
