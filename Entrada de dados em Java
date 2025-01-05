@@ -1,0 +1,248 @@
+// criando um objeto e respondendo pelo teclado
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+
+       // essa é a criação de um objeto com uma entrada pelo teclado
+       
+        Scanner sc = new Scanner(System.in);
+
+        String x;
+        x = sc.next();
+        System.out.println("Voce digitou: "+ x);
+
+
+
+
+        sc.close();
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+
+// criando um objeto e respondendo pelo teclado, mas com numero
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+
+        int x;
+        x = sc.nextInt();
+        System.out.println("Voce digitou: "+ x);
+
+
+
+
+        sc.close();
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+
+//usando numero com virgula
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+
+        // O . é usado no US, já a , é usada no BR (necessario locale para mudar para o ponto)
+
+        double x;
+        x = sc.nextDouble();
+        System.out.println("Voce digitou: "+ x);
+
+
+
+
+
+        sc.close();
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+
+// Agora Formatado
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+
+        // O . é usado no US, já a , é usada no BR (necessario locale para mudar para o ponto)
+
+        double x;
+        x = sc.nextDouble();
+        System.out.printf("Voce digitou: %.2f%n", x);
+
+
+        sc.close();
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+
+// Aplicaçao com locale
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        // O . é usado no US, já a , é usada no BR (necessario locale para mudar para o ponto)
+
+        double x;
+        x = sc.nextDouble();
+        System.out.printf("Voce digitou: %.2f%n", x);
+
+
+        sc.close();
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+
+// char para colocar apenas uma letra
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        char x;
+        x = sc.next(). charAt(0);
+        System.out.println("Voce digitou: " + x);
+
+
+        sc.close();
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+
+// muitas informaçoes em varias linhas diferentes
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        String x;
+        int y;
+        double z;
+
+        x = sc.next();
+        y = sc.nextInt();
+        z = sc.nextDouble();
+
+        System.out.println("Dados digitados: ");
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(z);
+
+        sc.close();
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+
+// varios dados seguintes
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+
+        String s1, s2, s3;
+        
+        // tem que colocar o nexline na linha para pegar ela inteira
+
+        s1 = sc.nextLine();
+        s2 = sc.nextLine();
+        s3 = sc.nextLine();
+
+        System.out.println("Dados digitados: ");
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+
+        sc.close();
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+
+//limpar um buffer de leitura
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+
+        int x;
+        String s1, s2, s3;
+
+        // para o nextInt ele usa um espaço e faz com que o s1 fique em branco
+        // para isso deve ser usado um nextline á mais para ficar no lugar do perdido
+
+        x = sc.nextInt();
+        sc.nextLine();
+        s1 = sc.nextLine();
+        s2 = sc.nextLine();
+        s3 = sc.nextLine();
+
+        System.out.println("Dados digitados: ");
+        System.out.println(x);
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+
+        sc.close();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
