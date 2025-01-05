@@ -41,7 +41,57 @@ public class Main {
 }
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//
+// area de um retangulo com 3 valores
+
+
+public class Main {
+    public static void main(String[] args){
+
+        double b, B, h, area;
+
+        // (boas praticas) Para numeros tem que indicar a expressão fopr pronto flutuante (não inteira). double usa .0 e float usa f
+
+        b = 6f;
+        B = 8f;
+        h = 5f;
+
+        area = (b+B) / 2f * h;
+
+        System.out.println(area);
+
+
+    }
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// area de um retangulo com 3 valores com double
+
+public class Main {
+    public static void main(String[] args){
+
+        double b, B, h, area;
+
+        // para numeros tem que indicar a expressão fopr pronto flutuante (não inteira). double usa .0 e float usa f
+
+        b = 6.0;
+        B = 8.0;
+        h = 5.0;
+
+        area = (b+B) / 2.0 * h;
+
+        System.out.println(area);
+
+
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 
 
 
