@@ -1,0 +1,27 @@
+( X é igual a 5 )
+
+maior
+x > 0         resultado: V
+
+igual
+X == 3        resultado: F
+
+menor igual
+10 < 30       resultado: V
+
+diferente
+x != 2        resultado: V
+
+
+
+
+
+
+
+
+
+
+
+
+
+
