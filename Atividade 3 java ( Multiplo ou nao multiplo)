@@ -1,0 +1,111 @@
+import java.util.Scanner;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int numero1;
+        int numero2;
+        int calculo;
+        int resultado;
+
+
+        System.out.println("Qual o numero? ");
+        numero1 = sc.nextInt();
+        numero2 = sc.nextInt();
+        resultado = numero1 % numero2;
+        calculo = numero2 % numero1;
+
+
+
+        if (numero1 > numero2) {
+            resultado = numero1 % numero2 ;
+
+        }
+
+        else {
+            calculo = numero2 % numero1 ;
+        }
+
+        if (numero1 > numero2) {
+           if ( resultado == 0 ) {
+               System.out.println("SÃO MULTIPLOS");
+           }
+
+        } else {
+            if (calculo == 0 ){
+                System.out.println("SÃO MULTIPLOS");
+            }
+            else {
+                System.out.println("NÃO SÃO MULTIPLOS");
+            }
+
+            }
+
+
+        sc.close();
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// codigo do professor 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+
+        if (A % B == 0 || B % A == 0) {
+            System.out.println("Sao Multiplos");
+        }
+        else {
+            System.out.println("Nao sao Multiplos");
+        }
+
+        sc.close();
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
