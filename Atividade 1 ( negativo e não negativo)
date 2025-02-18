@@ -6,12 +6,12 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int hora;
+        int numero;
 
-        System.out.println("Quantos horas?");
-        hora = sc.nextInt();
+        System.out.println("Qual o numero? ");
+        numero = sc.nextInt();
 
-        if (hora < 0) {
+        if (numero < 0) {
             System.out.println("Negativo");
         }
 
