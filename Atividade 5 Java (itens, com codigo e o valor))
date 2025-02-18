@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in) ;
+
+        double codigo = sc.nextDouble();
+        int vezes = sc.nextInt();
+        double total = codigo * vezes;
+
+        if (codigo == 1){
+           total = 4 * vezes ;
+        }
+        if (codigo == 2){
+            total = 4.5 * vezes ;
+        }
+        if (codigo == 3){
+            total = 5 * vezes ;
+        }
+        if (codigo == 4){
+            total = 2 * vezes ;
+        }
+        if (codigo == 5){
+            total = 1.5 * vezes ;
+        }
+
+
+
+        System.out.println("Total: R$ " + total);
+
+
+    }
+
+}
+
