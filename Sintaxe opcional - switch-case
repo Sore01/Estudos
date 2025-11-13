@@ -1,0 +1,142 @@
+// SEM O SWITCH-CASE
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        int x = sc.nextInt();
+        String dia;
+
+        if (x == 1)  {
+            dia = "domingo";
+        } else if (x == 2) {
+            dia  = "segunda";
+        } else if (x == 3) {
+        dia  = "terca";
+    }else if (x == 4) {
+            dia  = "quarta";
+        }else if (x == 5) {
+            dia  = "quinta";
+        }else if (x == 6) {
+            dia  = "sexta";
+        }else if (x == 7) {
+            dia  = "sabado";
+        } else {
+            dia = "Valor invalido";
+        }
+
+        System.out.println("Dia da semana : "+ dia);
+
+        sc.close();
+
+    }
+
+}
+
+--------------------------------------------------------------------------------------------------------
+// COM SWITCH-CASE
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        int x = sc.nextInt();
+        String dia;
+
+       switch (x) {
+           case 1:
+               dia = "Domingo";
+               break;
+            case 2:
+                dia = "Segunda";
+                break;
+           case 3:
+               dia = "terca";
+               break;
+           case 4:
+               dia = "quarta";
+               break;
+           case 5:
+               dia = "quinta";
+               break;
+           case 6:
+               dia = "sexta";
+               break;
+           case 7:
+               dia = "sabado";
+               break;
+           default:
+               dia = "Valor invalido";
+               break;
+       }
+
+       System.out.println("Dia da semana: " + dia);
+
+        sc.close();
+
+    }
+
+}
+
+-------------------------------------------------------------------------------------------------------------------
+
+Sintaxe do switch-case
+
+switch ( expressão) {
+case valor1:
+	comando1
+	comando2
+	break;
+case valor2:
+	comando3
+	comando4
+	break;
+default:
+	comando5
+	comando6
+	break;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
