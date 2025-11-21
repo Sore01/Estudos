@@ -1,0 +1,128 @@
+Estrutura Condicional 
+
+ira acontecer algo mediantye  a uma ação ou melhor uma condição.
+
+"se EU TIVER DINHEIRO então vou fazer uma viagem pra Disney"
+
+---
+se (expressão) então
+	bloco
+FimSe
+---
+---
+se (dinheiro >= 10.000)  então
+	escreva ("partiu Disney")
+FimSe
+---
+
+Condicional simples
+
+- bloco no  qual a estrutura seja verdadeira
+
+---
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+
+        int  ano =  2025;
+        int nacimento = 2003;
+        int idade = ano  - nacimento;
+
+        System.out.println(idade);
+
+    }
+}
+
+---
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int  ano = 2025;
+        int nacimento = 2003;
+        int idade = ano  - nacimento;
+
+        if (idade>18){
+            System.out.println("voce é maior de idade");
+        }
+        else {
+            System.out.println("voce é menor de idade");
+        }
+
+        System.out.println(idade);
+
+    }
+}
+
+---
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o ano atual: ");
+        int  ano = sc.nextInt();
+        System.out.print("Digite o Nascimento: ");
+        int nacimento = sc.nextInt();
+        int idade = ano  - nacimento;
+
+
+
+        if (idade>18){
+            System.out.println("voce é maior de idade ");
+        }
+        else {
+            System.out.println("voce é menor de idade ");
+        }
+
+        System.out.println(idade);
+
+    }
+}
+
+---
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o ano atual: ");
+        int  ano = sc.nextInt();
+        System.out.print("Digite o Nascimento: ");
+        int nacimento = sc.nextInt();
+        int idade = ano  - nacimento;
+
+
+
+        if (idade>18){
+            System.out.println("voce é maior de idade ");
+        }
+        else {
+            System.out.println("voce é menor de idade ");
+        }
+
+        System.out.println(idade + " Anos");
+
+    }
+}
+
+---
+
