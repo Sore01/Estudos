@@ -1,0 +1,29 @@
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in); //Objeto ou novo objeto
+        String senha = ""; // aberto para receber a senha por isso sem valor
+        int tentativas = 0; //  Contador
+
+        while (!senha.equals("1234") && tentativas < 3) { //senha equivale e contador 0
+
+            System.out.print("Digite a senha: "); // Sistema mostra pro usuario
+            senha = sc.nextLine();  // usuario digita
+            tentativas++; //Primeira tentativa e se torna 1 no contador
+
+            if (!senha.equals("1234")) {
+                System.out.println("Senha incorreta!");
+            }
+
+            if (senha.equals("1234")){
+                System.out.println("Acesso liberado!");
+            } else {
+                System.out.println("Acesso bloqueado! Voce excedeu 3  tentativas.");
+            }
+        }
+        sc.close();
+    }
+}
