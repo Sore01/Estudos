@@ -1,0 +1,46 @@
+//Soma de dois numeros
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o  primeiro numero: ");
+        int numero1 =  sc.nextInt();
+
+        System.out.print("Digite o segundo numero: ");
+        int numero2 = sc.nextInt();
+        
+        int total = numero1 + numero2;
+
+        System.out.println("A soma é:  "+total);
+
+    }
+}
+
+
+// as variaveis podem estar dentro do corpo do codigo, nao necessariamente no inicio dela
+
+----------------------------------------------------------------------------------------------------
+//Saber a idade de alguem e retornar algo
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Qual sua idade: ");
+        int idade = sc.nextInt();
+
+
+        if (idade <=18) {
+            System.out.println("Voce é menor de idade ");
+        } else {
+            System.out.println("Voce é maior de idade");
+        }
+    }
+}
