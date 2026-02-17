@@ -71,15 +71,34 @@ public class Main {
 }
 
 --------------------------------------------------------------------------------------------------------------------
+//media de nota
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Primeira nota");
+        double nota1 = sc.nextDouble();
+
+        System.out.println("Segunda nota");
+        double nota2 = sc.nextDouble();
+
+        double total = (nota1+nota2)/2;
+
+        if (total>=7){
+            System.out.println("aprovado");
+        }else {
+            System.out.println("reporvado");
+        }
+
+    }
+}
 
 
-
-
-
-
-
-
-
+// usar os caulos antes de entrar no if else para que eles ja estejao prontos
 
 
 
