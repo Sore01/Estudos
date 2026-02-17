@@ -105,7 +105,40 @@ public class Main {
 -------------------------------------------------------------------------------------------------------------
 // Excercicios intermediarios
 
+//comparando e achando o numero maior
 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("escolha um numero");
+        int numero1  = sc.nextInt();
+
+        System.out.println("Escolha outro numero");
+        int numero2 = sc.nextInt();
+
+        System.out.println("Escolha outro numero");
+        int numero3 = sc.nextInt();
+
+        int maior = numero1; //assumindo que o  primeiro numero é o maior
+
+        if (numero2>maior){
+            maior =  numero2;
+        }
+
+        if (numero3 > maior){
+            maior = numero3;
+        }
+
+        System.out.println("Omaior numero  é: "+maior);
+
+        sc.close();
+
+    }
+}
 
 
 
