@@ -1,3 +1,5 @@
+//Exercicios Basicos
+
 //Soma de dois numeros
 
 import java.util.Scanner;
@@ -99,6 +101,9 @@ public class Main {
 
 
 // usar os caulos antes de entrar no if else para que eles ja estejao prontos
+
+-------------------------------------------------------------------------------------------------------------
+// Excercicios intermediarios
 
 
 
