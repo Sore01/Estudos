@@ -141,6 +141,158 @@ public class Main {
 }
 
 
+-------------------------------------------------------------------------------------------------------------
+
+//Tabuada do 1 ao 10
+
+// como eu fiz
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("escolha um numero: ");
+        int n = sc.nextInt();
+
+        int resultado1 = n * 1;
+        System.out.println(resultado1 + " x 1 = " + resultado1);
+
+        int resultado2 = n * 2;
+        System.out.println(resultado2+" x 2 = "+resultado2);
+
+        int resultado3 = n * 3;
+        System.out.println(resultado3+" x 3 = "+resultado3);
+
+        int resultado4 = n * 4;
+        System.out.println(resultado4+" x 4 = "+resultado4);
+
+        int resultado5 = n * 5;
+        System.out.println(resultado5+" x 5 = "+resultado5);
+
+        int resultado6 = n * 6;
+        System.out.println(resultado6+" x 6 = "+resultado6);
+
+        int resultado7 = n * 7;
+        System.out.println(resultado7+" x 7 = "+resultado7);
+
+        int resultado8 = n * 8;
+        System.out.println(resultado8+" x 8 = "+resultado8);
+
+        int resultado9 = n * 9;
+        System.out.println(resultado9+" x 9 = "+resultado9);
+
+        int resultado10 = n * 10;
+        System.out.println(resultado10+" x 10 = "+resultado10);
+
+    }
+}
+
+// Deu errado
+
+// OQUE DEVE SER FEITO:
+
+System.out.println(n + " x 2 = " + resultado2);
+
+Porque:
+
+n é o número fixo da tabuada
+
+// resultado é o resultado da multiplicação
+
+-------------------------------------------------------------------------------------------------------------
+
+// A QUE DEU CERTO 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("escolha um numero: ");
+        int n = sc.nextInt();
+
+        int resultado1 = n * 1;
+        System.out.println(n + " x 1 = " + resultado1);
+
+        int resultado2 = n * 2;
+        System.out.println(n + " x 2 = " + resultado2);
+
+        int resultado3 = n * 3;
+        System.out.println(n + " x 3 = " + resultado3);
+
+        int resultado4 = n * 4;
+        System.out.println(n + " x 4 = " + resultado4);
+
+        int resultado5 = n * 5;
+        System.out.println(n + " x 5 = " + resultado5);
+
+        int resultado6 = n * 6;
+        System.out.println(n + " x 6 = " + resultado6);
+
+        int resultado7 = n * 7;
+        System.out.println(n + " x 7 = " + resultado7);
+
+        int resultado8 = n * 8;
+        System.out.println(n + " x 8 = " + resultado8);
+
+        int resultado9 = n * 9;
+        System.out.println(n + " x 9 = " + resultado9);
+
+        int resultado10 = n * 10;
+        System.out.println(n + " x 10 = " + resultado10);
+
+    }
+}
+
+
+-------------------------------------------------------------------------------------------------------------
+
+// FORMA MAIS PROFICCIONAL 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Escolha um número: ");
+        int n = sc.nextInt();
+
+        for (int i = 1; i <= 10; i++) {
+            int resultado = n * i;
+            System.out.println(n + " x " + i + " = " + resultado);
+        }
+
+        sc.close();
+    }
+}
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
