@@ -1,0 +1,19 @@
+ public class VerificaSaldo {
+            
+    public static void main(String[] args) {
+                
+                
+                double saldo = 500.00;
+                double valorSaque = 300.00;
+                
+                
+                if (saldo >= valorSaque) { System.out.println("Saque aprovado!");
+                    saldo = saldo - valorSaque;
+                    System.out.println("Novo saldo: R$ " + saldo);
+                } else if (saldo > 0) { System.out.println("Saldo insuficiente.");
+                    System.out.println("Saldo disponível: R$ " + saldo);
+                } else { System.out.println("Conta zerada. Sem saldo.");
+                    
+                }
+            }
+        }
