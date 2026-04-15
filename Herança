@@ -1,0 +1,167 @@
+public class Conta {
+    private double saldo;
+
+    public void depositar(double valor) {
+        saldo += valor;
+    }
+
+    public double verSaldo() {
+        return saldo;
+    }
+}
+
+//Estudos sobre o Private
+
+-----------------------------------------------------------------
+2. this — O que é isso?
+
+this significa "este objeto aqui".
+
+public class Conta {
+    private int agencia;
+
+    public Conta(int agencia) {
+        this.agencia = agencia;
+    }
+}
+
+🤯 Explicação simples:
+agencia (sem this) → variável do método (parâmetro)
+this.agencia → variável da classe
+
+👉 Então essa linha:
+
+this.agencia = agencia;
+
+Significa:
+👉 “A variável da classe recebe o valor que veio no parâmetro”
+
+
+
+
+Variavel da classe  ?
+“A variável da classe recebe o valor que veio no parâmetro” ????
+
+
+🧠 Analogia:
+
+Imagina:
+
+Você tem uma caixa chamada "agencia"
+Chega outra caixa com o mesmo nome
+
+O this fala:
+👉 “Estou falando da MINHA caixa”
+
+
+
+
+
+-------------------------------------------------------------------
+
+🔁 3. @Override — O que é isso?
+
+É usado quando você reescreve um método da classe pai.
+
+👉 Isso acontece na herança.
+
+💡 Ideia:
+
+Uma classe filha pode mudar o comportamento da classe pai.
+
+
+class Animal {
+    public void fazerSom() {
+        System.out.println("Som genérico");
+    }
+}
+
+class Cachorro extends Animal {
+
+    @Override
+    public void fazerSom() {
+        System.out.println("Latindo");
+    }
+}
+
+
+// entao o @override ele pode mudar as coisas la de cima que ja forao estabelecidas, mas pk ele faria isso ?, mudar de som para latido? ou o som e depois fica  mais especifico como latido ?
+
+O que acontece?
+Cachorro c = new Cachorro();
+c.fazerSom();
+
+👉 Saída:
+
+Latindo
+
+
+Por que usar @Override?
+
+Ele serve como segurança.
+
+Se você errar o nome:
+
+@Override
+public void fazerSomm() { } // ❌ erro
+
+👉 O Java avisa:
+“Você tentou sobrescrever, mas fez errado”
+
+
+class Conta {
+    private double saldo;
+
+    public Conta(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public void sacar(double valor) {
+        saldo -= valor;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+}
+
+class ContaPoupanca extends Conta {
+
+    public ContaPoupanca(double saldo) {
+        super(saldo);
+    }
+
+    @Override
+    public void sacar(double valor) {
+        System.out.println("Saque com taxa");
+        super.sacar(valor + 2);
+    }
+}
+
+
+// pk tem muitos public void? ou publico?
+// pk isso ? :
+
+class ContaPoupanca extends Conta {
+
+    public ContaPoupanca(double saldo) {
+        super(saldo);
+    }
+
+//ele chamou o a conta como uma extenção para pegar as coisas que ja tinha nela e aplicar na ContaPoupanca e depopis ele usaou uma função para deixar o saldo da conta em double e deixar o saldo
+da Conta em super pk é de la e nao da ContaPoupanca??? é isso ??? 
+
+
+🧠 RESUMÃO FINAL
+private → protege dados 🔒
+this → referencia o objeto atual 🧍
+@Override → reescreve comportamento 🔁
+
+
+
+
+
+
+
+
+
