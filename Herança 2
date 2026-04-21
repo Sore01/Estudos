@@ -1,2 +1,97 @@
 // o pai tem algo e a filha herda do pai podendo modificar o valor que tiver nela e podendo afetar nao diretamente o pai mas indiretamente
 //
+
+//
+protected protege a informação?
+Não exatamente. O nome "protected" é um pouco confuso. Ele não impede alterações — ele controla quem pode acessar. 
+Um atributo protected pode ser lido e alterado normalmente dentro da própria classe e em subclasses. 
+O que ele bloqueia é o acesso de classes sem relação com a hierarquia.
+Pense assim: private = cadeado total. protected = acesso para a família. public = acesso para todos.
+//
+
+//
+Sobre o this — suas dúvidas
+this.nome.animal existe? Não nesse contexto. O ponto depois de this.nome serviria para chamar um método ou atributo de dentro
+do objeto nome — por exemplo, this.nome.length(). Não faz sentido escrever this.nome.animal.
+this.nome = "gato" funciona? Sim! Você pode colocar qualquer valor compatível com o tipo:
+
+
+javathis.nome = "gato";    // ✅ funciona
+this.nome = nome;      // ✅ também funciona (pega o parâmetro)
+this.nome = "pudim";   // ✅ também funciona
+
+public class Animal {
+    protected String pudim;       // atributo se chama "pudim"
+
+    public Animal(String nome) {
+        this.nome = pudim;        // ❌ ERRO: não existe "this.nome"!
+    }
+}
+O erro é que você criou o atributo com o nome pudim, mas tentou usar this.nome
+O this precisa bater com o nome do atributo declarado. O certo seria:
+
+this.pudim = nome;  // atributo pudim recebe o valor do parâmetro nome
+
+O lado esquerdo do = é sempre o atributo da classe (com this), e o lado direito é de onde vem o valor.
+
+//
+
+Por que usar super(nome) se o nome já foi passado?
+Essa é a dúvida mais comum! Veja o que acontece sem o super:
+javapublic class Cachorro extends Animal {
+    public Cachorro(String nome, String raca) {
+        // Java tenta chamar Animal() sem argumentos — mas não existe!
+        // ❌ ERRO de compilação
+        this.raca = raca;
+    }
+}
+Quando você cria um Cachorro, o Java precisa construir o Animal primeiro (o pai). Mas o construtor de Animal exige um nome. 
+Se você não passar com super(nome), o Java não sabe o que fazer. É como montar uma casa sem construir a fundação primeiro.
+
+
+public Cachorro(String nome, String raca) {
+    super(nome);       // 1. constrói o Animal com o nome
+    this.raca = raca;  // 2. depois define a raça do Cachorro
+}
+
+/ na parte da raca pode colocar outra coisa como this.raca = vira-lata?
+
+E super sempre recebe o que o construtor pai pede. Se Animal(String nome) pede uma String, você passa super(nome).
+
+//
+
+
+
+
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
