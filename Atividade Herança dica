@@ -1,0 +1,13 @@
+Crie a hierarquia: Pessoa → Estudante → Universitário
+
+Você precisa criar 3 classes em Java:
+
+Pessoa — atributo private String nome e private int idade. Construtor que recebe os dois. 
+Método público apresentar() que imprime: "Olá, sou [nome] e tenho [idade] anos."
+Estudante (herda de Pessoa) — atributo protected String escola. Construtor que recebe nome, idade e escola. Deve chamar o construtor do pai.
+Universitario (herda de Estudante) — atributo private String curso. Construtor que recebe nome, idade, escola e curso. 
+Deve chamar o construtor do pai. 
+Método mostrarCurso() que imprime: "Curso: [curso] em [escola]"
+
+Dica: lembre que Universitario herda de Estudante, que herda de Pessoa. 
+Cada construtor precisa chamar super() passando o que o pai precisa. O atributo nome é private em Pessoa — Universitario não acessa direto!
