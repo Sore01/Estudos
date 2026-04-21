@@ -1,0 +1,131 @@
+// ============================================================
+//  GUIA DE HERANÇA EM JAVA — preencha os "___" e os "???"
+//  Não é para rodar direto — é seu mapa de estudos!
+// ============================================================
+ 
+ 
+// ── BLOCO 1: criando a classe PAI ────────────────────────────
+//
+//  Regra: atributos que só a própria classe usa → private
+//         atributos que filhos precisam acessar  → protected
+//         métodos que qualquer um pode chamar    → public
+ 
+___ class ___ {                          // qual modificador? qual nome?
+ 
+    private  String ___ ;                // atributo só desta classe
+    protected int   ___ ;                // atributo que filhos vão usar
+    public    ___   ___ ;                // atributo aberto para todos
+ 
+    // construtor — recebe valores e guarda nos atributos
+    public ___(String ___, int ___) {    // mesmo nome da classe
+        this.___ = ___ ;                 // atributo = parâmetro
+        this.___ = ___ ;
+    }
+ 
+    // getter — única forma de ler um atributo private de fora
+    public String get___() {
+        return this.___ ;
+    }
+ 
+    // método comum
+    public void apresentar() {
+        System.out.println("Olá, sou " + ___ + " e tenho " + ___ + " anos.");
+        //                               ^                    ^
+        //                         nome do atributo     nome do atributo
+    }
+}
+ 
+ 
+// ── BLOCO 2: criando a classe FILHA (herança simples) ────────
+//
+//  Regra: use "extends" para herdar
+//         use "super(...)" SEMPRE como 1ª linha do construtor
+//         atributos novos desta classe ficam aqui (private ou protected)
+ 
+___ class ___ extends ___ {              // filho extends pai
+ 
+    private String ___ ;                 // atributo exclusivo do filho
+ 
+    public ___(String ___, String ___) { // construtor do filho
+        super( ___ );                    // passa para o pai o que ele precisa
+        this.___ = ___ ;                 // cuida do atributo exclusivo
+    }
+ 
+    // método exclusivo do filho
+    public void ___ () {
+        System.out.println( ___ );       // pode usar atributos protected do pai
+                                         // NÃO pode usar atributos private do pai
+                                         // para private do pai → use o getter!
+    }
+}
+ 
+ 
+// ── BLOCO 3: classe NETA (herança em cadeia) ─────────────────
+//
+//  Regra: neta → filha → pai  (cada super() sobe um nível)
+//         o "this" sempre se refere ao objeto atual (neta)
+//         o "super" sempre se refere ao pai imediato (filha)
+ 
+___ class ___ extends ___ {              // neta extends filha
+ 
+    private ___ ___ ;                    // atributo exclusivo da neta
+ 
+    public ___(String ___, String ___, String ___) {
+        super(___, ___);                 // passa para a filha o que ela precisa
+        this.___ = ___ ;                 // cuida do seu próprio atributo
+    }
+ 
+    public void ___ () {
+        System.out.println("Curso: " + ___ + " em " + ___);
+        //                                  ^               ^
+        //                       atributo da neta    atributo protected da filha
+        //                                           (pode acessar direto!)
+    }
+}
+ 
+ 
+// ── BLOCO 4: usando tudo no main ─────────────────────────────
+//
+//  Regra: new NomeDaClasse(argumentos) cria um objeto
+//         objeto.metodo() chama um método
+//         um objeto Neta pode chamar métodos de Filha e de Pai também!
+ 
+public class Main {
+    public static void main(String[] args) {
+ 
+        ___ objeto1 = new ___(  ___ ,  ___  );          // cria objeto do pai
+        objeto1. ___ ();                                  // chama método do pai
+ 
+        ___ objeto2 = new ___( ___ , ___ , ___ );       // cria objeto da filha
+        objeto2. ___ ();                                  // chama método herdado do pai
+        objeto2. ___ ();                                  // chama método próprio da filha
+ 
+        ___ objeto3 = new ___( ___ , ___ , ___ , ___ ); // cria objeto da neta
+        objeto3. ___ ();                                  // pode chamar método do pai
+        objeto3. ___ ();                                  // pode chamar método da filha
+        objeto3. ___ ();                                  // chama método próprio da neta
+    }
+}
+ 
+ 
+// ============================================================
+//  MAPA MENTAL RÁPIDO
+// ============================================================
+//
+//  this.atributo = valor   → guarda valor no atributo DO OBJETO ATUAL
+//  super(valor)            → chama o CONSTRUTOR DO PAI
+//  super.metodo()          → chama um MÉTODO DO PAI (quando precisar)
+//
+//  private   → só eu acesso
+//  protected → eu e meus filhos acessamos
+//  public    → qualquer um acessa
+//
+//  getter (getNome())      → forma correta de ler um private de fora
+//  setter (setNome(v))     → forma correta de alterar um private de fora
+//
+//  Ordem de construção quando você faz new Neta():
+//    1. Construtor de Pai roda primeiro
+//    2. Construtor de Filha roda depois
+//    3. Construtor de Neta roda por último
+// ============================================================
+ 
