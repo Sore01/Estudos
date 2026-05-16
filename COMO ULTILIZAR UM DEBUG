@@ -1,0 +1,34 @@
+modelo - estruturas repetitivas  16/05/2026
+
+- COMO ULTILIZAR UM DEBUG
+
+- mostra como faz o debug e como  funciona  pelo eclipse 
+
+// já seio como funciona no intelij mas vou ficar pra ver algo a  mais que ele va falar
+
+- para usar o debug ele  deve ir com o maose e tocar ao lado e ir no modo bug do intelij que aprendeu com o jhow
+
+código da aula : 
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        double largura = sc.nextDouble();
+        double comprimento = sc.nextDouble();
+        double metroQuadrado = sc.nextDouble();
+
+        double area = largura * comprimento;
+        double preco = area * metroQuadrado;
+        
+        System.out.printf("AREA = %.2f%n", area);
+        System.out.printf("PRECO = %.2f%n", preco);
+
+        sc.close();
+    }
+}
