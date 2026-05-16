@@ -1,0 +1,69 @@
+escopo e iniciação 16/05/2026
+
+// a variável ela precisa de um valor para que ela seja iniciada
+
+
+public class Main {
+    public static void main(String[] args) {
+        
+        double x = 20;
+        double price = sc.nextDouble();
+
+        System.out.println(price);
+    }
+}
+
+// caso não tenha valor no x ou no price ele não consegue compilar.
+
+// tem que iniciar a variável de alguma forma 
+
+// essa é a iniciação da variável
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        double price = 400.00;
+        
+        if (price < 200){
+            double discount = price * 0.1;
+        }
+        
+        System.out.println(discount);
+    }
+}
+
+
+
+
+
+
+// vai dar erro pois a  variável esta fora do escopo do método,  pois  ela foi usada somente na estrutura condicional if,  ou seja qualquer estrutura condicional ou que seja deve ter o seu próprio escopo, qualquer variável que existir  o escolpo só existem enquanto estiver esco´pop ao final as vareiaivei que forem declaradas, serão desalocadas na memoria.
+
+// para dar certo terá que declara a variável fora da estrutura e dentro da estrutura você inicia com algum valor e pode  ser iniciada e pode vir  um erro onde que fale que não esta dando  pelo compilador entender que o valor da variável esta incoerente 
+
+// deve ser usada com 0 para ficar mais rápido e ela ter um valor
+
+// pode ser usada tambe um else para que a estrutura  va de um jeito ou de outro pois o compilador pode entender que a estrutura  esta incoerente e ele possa  pular alguma etapa.
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        double price = 400.00;
+
+        double discount;
+
+        if (price < 200){
+            double discount = price * 0.1;
+        }
+        else {
+            discount = 0;
+        }
+
+        System.out.println(discount);
+    }
+}
+
+
+// EROS: " NAO ENTENDI, NO MEU DEU  ERRO, FALAR COM  JHONATHAN SOBRE ISSO"
