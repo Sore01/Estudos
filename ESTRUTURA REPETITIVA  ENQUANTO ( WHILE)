@@ -1,0 +1,83 @@
+ESTRUTURA REPETITIVA  ENQUANTO ( WHILE) 16/05/2026
+
+- É uma estrutura de controle que repete um bloco de comandos enquanto uma condição for verdadeira.
+
+Quando usar: quando não se sabe previamente a  quantidade de  repetições que será realizada. 
+
+Problema exemplo: 
+Fazer um programa que lê números inteiros até que um zero seja lido. Ao final mostra a soma dos números lidos.
+
+Sintaxe/regra
+
+while ( condição ) {
+	comando 1
+	comando 2
+}
+
+
+
+Regra: 
+
+V: executa e volta
+F: pula fora
+
+// esse ele executa e volta  diferente da estrutura condicional simples que simplesmente executa
+
+
+Resumo da aula
+
+- Estrutura repetitiva  "enquanto"
+-recomendada quando não se sabe previamente a quantidade de repetições
+-Regra:
+	.V: execute e volta
+	.F: pula fora
+
+
+
+Código: 
+
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int x = sc.nextInt();
+
+        while (x != 0) {
+           x = sc.nextInt();
+        }
+
+        sc.close();
+    }
+}
+
+
+
+ -------------------------------------------------------------------------------------------------
+
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int x = sc.nextInt();
+
+        int soma = 0;
+
+        while (x != 0) {
+            soma = soma + x;
+           x = sc.nextInt();
+        }
+
+        System.out.println(soma);
+
+        sc.close();
+    }
+}
+
