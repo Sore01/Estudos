@@ -1,0 +1,26 @@
+Teste de mesa com estrutura repetitiva 16/05/2026
+
+Exercício : teste de mesa manual
+
+x = 0;
+
+y = 4;
+
+while (x<3){
+	y = y  + 2;
+	x = x  + 1;
+	
+	System.out.println(  x  +  "-" + y );
+}
+
+
+
+Tela: 
+
+1 - 6 
+
+2 - 8 
+
+3 - 10
+
+// vendo como basicamente funciona o while
