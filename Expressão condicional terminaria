@@ -1,0 +1,61 @@
+Estrutura opcional ao if-else quando de deseja decidir um VALOR combase em uma condição.
+
+Sintaxe:
+
+(condição) ?  Valor_se_verdadeiro : Valor_se_falso
+
+exemplo :
+
+( 2 > 4 ) ? 50 : 80 --> 80
+
+// 2 é maior que 4 ?, não então  50 se for sim e 80 se for não
+// então se não é verdadeira  é 80
+
+( 10 !=  3 )  ? "Maria" : "Alex" --> "Maria"
+
+// 10 diferente de 3 ? sim, pois maria é verdadeiro
+
+
+Demo:
+
+double preco = 34.5;
+double desconto;
+if (preco < 20.0){
+        }
+else {
+    desconto = preco * 0.05;
+        }
+
+como  eu fiz :
+
+public class Main {
+    public static void main(String[] args) {
+
+        double preco = 34.5;
+        double desconto;
+        if (preco < 20.0){
+        }
+        else {
+            desconto = preco * 0.05;
+        }
+
+        System.out.println(preco);
+    }
+}
+
+
+
+-----------------------------------------------------
+
+como o professor fez: 
+
+public class Main {
+    public static void main(String[] args) {
+
+        double preco = 34.5;
+        double desconto = (preco < 20.0) ? preco * 0.1 : preco * 0.05;
+
+        System.out.println(desconto);
+        
+    }
+}
