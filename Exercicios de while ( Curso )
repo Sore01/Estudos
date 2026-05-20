@@ -1,0 +1,89 @@
+Exercicios de while 20/05/2026
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+       
+       double x = 5; 
+       double y = 0;
+        while (x >2){
+            System.out.println(x);
+            y = y + x;
+            x = x - 1;
+        }
+            
+            
+        sc.close();
+    }
+}
+
+
+-----------------------------------------------------------------------------------------
+
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+       double x = 2;
+       double y = 0;
+       
+       while (x < 60){
+           System.out.println(x);
+           x = x * 2;
+           y = y + 10;
+       }
+
+
+        sc.close();
+    }
+}
+
+
+-----------------------------------------------------------------------------------------
+
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+       double x = 100;
+       double y = 100;
+
+       while (x != y) {
+           System.out.print("olha");
+           x = Math.sqrt(y);
+       }
+
+
+        sc.close();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
