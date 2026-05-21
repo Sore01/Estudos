@@ -71,7 +71,31 @@ public class Main {
 
 
 
+-----------------------------------------------------------------------------------------
 
+
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Please enter your password: ");
+
+        int password = sc.nextInt();
+
+        while(password != 2002) {
+            System.out.print("Senha invalida: ");
+            password = sc.nextInt();
+        }
+
+        System.out.println("Acesso Permitido ");
+
+        sc.close();
+    }
+}
 
 
 
