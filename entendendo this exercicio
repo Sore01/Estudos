@@ -1,0 +1,122 @@
+public class Produto {
+    // declare os atributos aqui
+
+    // escreva o construtor aqui
+
+    // escreva o método mostrarInfo() aqui
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // crie os dois objetos aqui
+        // chame mostrarInfo() de cada um
+    }
+}
+
+
+ // declare os atributos aqui:
+
+ public  class Produto {
+           String nome = nome;
+           double preco = preco;
+
+
+
+
+    // escreva o construtor aqui:
+
+    public Produto(String nome,  double preco){
+               this.nome = nome;
+               this.preco = preco;
+           }
+
+
+    // escreva o método mostrarInfo() aqui:
+
+      public void mostrarInfo() {
+               System.out.println("Produto: " + nome + "- R$" + preco);
+           }
+
+       }
+
+
+
+
+public class Main {
+    public static void main(String[] args) {
+
+       public  class Produto {
+           String nome = nome;
+           double preco = preco;
+
+           public Produto(String nome,  double preco){
+               this.nome = nome;
+               this.preco = preco;
+           }
+
+           public void mostrarInfo() {
+               System.out.println("Produto: " + nome + "- R$" + preco);
+           }
+
+       }
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
