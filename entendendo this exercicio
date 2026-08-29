@@ -65,9 +65,49 @@ public class Main {
 --------------------------------------------------------------------------------------------------------------------------------
 
 
+codigo completo certo : 
+
+public class Produto {
+    String nome;
+    double preco;
+
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
+
+    public void mostrarInfo() {
+        System.out.println("Produto: " + nome + " - R$" + preco);
+    }
+}
+ 
+class manin {
+    public static void Produto(String[] args) {
+        Produto produto1 = new Produto("Caderno", 15.5);
+        produto1.mostrarInfo();
+    }
+}
 
 
 
+exemplo de escopo : 
+
+
+
+public class Produto {
+    // declare os atributos aqui
+
+    // escreva o construtor aqui
+
+    // escreva o método mostrarInfo() aqui
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // crie os dois objetos aqui
+        // chame mostrarInfo() de cada um
+    }
+}
 
 
 
