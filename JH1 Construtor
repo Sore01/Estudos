@@ -1,0 +1,41 @@
+public class Produto {
+    String nome;
+    double preco;
+
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
+
+    public void mostrarInfo() {
+        System.out.println("Produto: " + nome + " - R$" + preco);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Produto produto1 = new Produto("Caderno", 15.5);
+        produto1.mostrarInfo();
+
+        
+        Produto produto2 = new Produto("Lapis", 5.5);
+        produto2.mostrarInfo();
+    }
+}
+
+
+
+
+construtor:
+
+- o consrtrutor constrói  um objeto na memoria 
+
+- todo objeto tem que ter um construto seja ele com ou sem parâmetros
+
+- pode criar construtores com parâmetros e sem e pode criar mais de um construtor, pois eles são necessários para o objeto
+
+
+
+get e set lição de casa
+
+
