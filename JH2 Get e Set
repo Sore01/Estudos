@@ -1,0 +1,229 @@
+get e set 
+
+
+gaveta é objeto ele  tem varias coisas como meias, cuecas e etc 
+
+você tem a quantidade de coisas ali  
+
+gaveta = instancia 
+
+this = essa instancia dentro dela
+
+
+--------------------------------------------------------------------------------------
+
+public String getNome() {
+        return nome;
+    }
+
+get ele abre a gaveta e o return pega para puxar para outro lugar
+
+
+ public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+altera oque esta dentro da gaveta 
+
+
+
+classe  e propriedades:
+
+classe: aluno
+
+propriedade: 
+
+    private String nome;
+    private double nota;
+
+
+classe e objeti  são a  mesma coisa 
+--------------------------------------------------------------------------------------
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Aluno aluno = new Aluno();
+
+        aluno.setNome("Eros");
+        aluno.setNota(8.5);
+
+        System.out.println(aluno.getNome());
+        System.out.println(aluno.getNota());
+    }
+}
+
+public class Aluno {
+
+    private String nome;
+    private double nota;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getNota() {
+        return nota;
+    }
+
+    public void setNota(double nota) {
+        this.nota = nota;
+    }
+}
+o aluno ganha um nome e uma nota, logo apos ele usa o get
+o get = pegar/ consultar  um valor ( pode ser ele qualquer valor ou qualquer coisa)
+o get ele vai pegar e colocar :
+
+
+    System.out.println(aluno.getNome());
+        System.out.println(aluno.getNota());
+    }
+}
+
+
+que vai ser como se ele estivesse falando: " mostra oque esta no getNome e getNota dentro da classe aluno 
+Son of God — Ontem às 21:37
+o get ele vai pegar e colocar :
+
+
+    System.out.println(aluno.getNome());
+        System.out.println(aluno.getNota());
+    }
+}
+
+
+que vai ser como se ele estivesse falando: " mostra oque esta no getNome e getNota dentro da classe aluno
+
+
+e vai mostrar oque tem  nele que seria o Eros e o 8.5
+
+
+deppis ele vai para o : 
+
+public class Aluno {
+
+    private String nome;
+    private double nota;
+
+    public String getNome() {
+        return nome;
+    }
+
+que vai  falar assim : "  a String nome esta privada pois não é qualquer um que  vai acessar apenas oque esta nela que vai continuar la " como se alguém  alterasse no banmco o seu saldo para  -10000, ou seja não tem  acesso ou não consegue ver quem não precisa ver, logo após ele faz com a nota  tbm, e mostra 
+
+
+public String getNome() {
+        return nome;
+    }
+
+que seria a string que tu pegou do nome pega ela 
+
+o sitema vai falar : " e eu enfio aonde ?" 
+
+e vc fala : " no return  nome "
+
+que seria  para ele retornar para o nome como se alguém  falasse " vai na gaveta de meia e pega uma meia" 
+
+depois que vc fizer isso vc fala oque faz  e ela fala "  coloca de volta"
+
+foi oq entendi trenho que ir para o programa ver como funciona 
+
+
+
+----------------------------------------------------------------
+
+ public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+quando vier esse  esta dizendo que  vai colocar ou alterar o valor 
+
+set = alterar/colocar
+
+vai colocar no nome que seria atributo a string que  seria o "Eros" e vai fazer isso com o  this (o famoso)
+
+que vai falar é pra coloca essa informação aqui dentro : this.nome = nome;
+
+ 
+mesma coisa com a nota:
+
+ public double getNota() {
+        return nota;
+    }
+
+    public void setNota(double nota) {
+        this.nota = nota;
+    }
+}
+
+
+
+
+--------------------------------------------------------------------------------------
+no this podemos não somente colocar coisas simples mas tbm isso : 
+
+public void setNota(double nota) {
+
+    if (nota >= 0 && nota <= 10) {
+        this.nota = nota;
+    }
+
+}
+
+pode controlar oque vai ser colocado em  forma de condição
+
+
+nesse exemplo para o aluno não ficar com : aluno.setNota(50);
+
+
+Isso é uma das grandes vantagens de getters e setters: encapsulamento
+
+--------------------------------------------------------------------------------------
+Son of God — Ontem às 22:05
+public void setNome(String nome) {
+        this.nome = nome;
+    }
+(String nome)
+setNome
+public void setNome(Abacate) {
+        this.nome = nome;
+    }
+public void setUva(Abacate) {
+        this.nome = nome;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
