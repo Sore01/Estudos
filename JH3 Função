@@ -1,0 +1,107 @@
+Exercicio:
+
+Voce tem  tres cachorro com nomes diferentes e quando , cada um com um NOME, IDADE, diferente e quando eles usam a função latir eles perdem 0.5 messes de vida.
+
+
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Cachorro 1
+        Cachorro cachorro1 = new Cachorro();
+        cachorro1.nome = "Safira";
+        cachorro1.idade = 2;
+
+        // Cachorro 2
+        Cachorro cachorro2 = new Cachorro();
+        cachorro2.nome = "Meggie";
+        cachorro2.idade = 3;
+
+        // Cachorro 3
+        Cachorro cachorro3 = new Cachorro();
+        cachorro3.nome = "Rex";
+        cachorro3.idade = 8;
+
+
+        // Os cachorros latem
+        cachorro1.latir();
+        cachorro2.latir();
+        cachorro3.latir();
+
+
+        // Mostrando as idades
+        System.out.println();
+        System.out.println(cachorro1.nome + " tem " + cachorro1.idade + " anos.");
+        System.out.println(cachorro2.nome + " tem " + cachorro2.idade + " anos.");
+        System.out.println(cachorro3.nome + " tem " + cachorro3.idade + " anos.");
+    }
+
+
+    // Classe Cachorro
+    static class Cachorro {
+
+        String nome;
+        double idade;
+
+        // Função/Método latir
+        public void latir() {
+
+            System.out.println(nome + ": Au Au!");
+
+            // Cada latido acrescenta 0,5 mês
+            idade = idade + (0.5 / 12);
+        }
+    }
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ele vai usar isso para fazer a funação:
+-> chamando a classe  
+-> coloca os atributos
+-> chama a função
+-> coloca void latir() = que seria a função 
+-> System.out.println -> para mostrar que a função aconteceu 
+-> idade = idade + (0.5 / 12);  -> oque acontece quandoa função é chamada 
+
+
+
+// Classe Cachorro
+    static class Cachorro {
+
+        String nome;
+        double idade;
+
+        // Função/Método latir
+        public void latir() {
+
+            System.out.println(nome + ": Au Au!");
+
+            // Cada latido acrescenta 0,5 mês
+            idade = idade + (0.5 / 12);
+        }
+    }
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
