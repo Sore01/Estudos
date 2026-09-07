@@ -1,0 +1,216 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Aluno aluno1 = new Aluno();
+
+        aluno1.setNome("Margarida");
+        aluno1.setNota(8.5);
+
+        System.out.println(aluno1.getNome());
+        System.out.println(aluno1.getNota());
+
+
+        Aluno aluno2 = new Aluno();
+
+        aluno2.setNome("Joao");
+        aluno2.setNota(5.0);
+
+        System.out.println(aluno2.getNome());
+        System.out.println(aluno2.getNota());
+
+
+        Aluno aluno3 = new Aluno();
+
+        aluno3.setNome("Moyses");
+        aluno3.setNota(3.0);
+
+        System.out.println(aluno3.getNome());
+        System.out.println(aluno3.getNota());
+
+
+        aluno1.estudar();
+        aluno2.estudar();
+        aluno3.estudar();
+
+    }
+}
+
+class Aluno {
+
+    private String nome;
+    private double nota;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getNota() {
+        return nota;
+    }
+
+    public void estudar(){
+        System.out.println(nome + " Estudou");
+        nota = nota + (0.5);
+        System.out.println(nome + " Estudou: " + nota);
+
+
+    }
+
+    public void setNota(double nota) {
+        this.nota = nota;
+    }
+
+
+}
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+anotações/relatorio da atividade  :
+
+na pode colocar :
+
+
+System.out.println(nome + " Estudou: " + nota);
+
+
+-> fora de uma função se ele estiver fora e isolado ele não sabe oque fazer ( pelo que entendi)
+
+-> colocar o código como se fosse ler um livro, se deixar desalinhado ele acaba lendo o código errado como se fosse um livro sem coesão e linha do tempo
+    o código fica confuso e o sistema entrega coisas diferentes de forma errada.
+
+-> entendi oque é uma função e para que serve: 
+
+a função serve para fazer algo em  meio a  alguma  classe  ela vai fazer  algo com a classe ou  melhor  com os atributos como ( if, else e funções matemáticas dentre outras coisas como while, for e etc)
+
+código de uma  função: 
+
+-> parte de cima  para chamar a função:
+
+        aluno1.estudar();
+        aluno2.estudar();
+        aluno3.estudar();
+
+
+
+-> parte de baixo para oque a função vai  fazer:
+
+
+    public void estudar(){
+        System.out.println(nome + " Estudou");
+        nota = nota + (0.5);
+        System.out.println(nome + " Estudou: " + nota);
+
+
+    }
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+estava mostrando os nomes dos dois  primeioros mas o do moyses ele mostrava depois
+quando fui ver a ordem que coloquei estava fora da ordem
+entao acho que isso afetou  meu codigo
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Aluno aluno1 = new Aluno();
+
+
+        aluno1.setNome("Margarida");
+        aluno1.setNota(8.5);
+
+        System.out.println(aluno1.getNome());
+        System.out.println(aluno1.getNota());
+
+        Aluno aluno2 = new Aluno();
+
+        aluno2.setNome("Joao");
+        aluno2.setNota(5.0);
+
+
+        System.out.println(aluno2.getNome());
+        System.out.println(aluno2.getNota());
+
+        Aluno aluno3 = new Aluno();
+
+        aluno3.setNome("Moyses");
+        aluno3.setNota(3.0);
+
+        aluno1.estudar();
+        aluno2.estudar();
+        aluno3.estudar();
+
+        System.out.println(aluno3.getNome());
+        System.out.println(aluno3.getNota());
+
+
+    }
+}
+
+class Aluno {
+
+    private String nome;
+    private double nota;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getNota() {
+        return nota;
+    }
+
+    public void estudar(){
+        System.out.println(nome + " Estudou");
+        nota = nota + (0.5 /10);
+
+    }
+
+    public void setNota(double nota) {
+        this.nota = nota;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
