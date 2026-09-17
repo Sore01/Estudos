@@ -1,0 +1,155 @@
+cursos de java 
+
+classe abstrata e insterfaces
+
+-> semelhança entre elas = ambas não podem criar um objeto, apartir de uma quanto pela outra
+
+-> objetos só podem ser criados por classes comuns
+
+
+public class Main {
+    public static void main (String[] args) {
+
+        Ninja ninja = new Ninja();
+        ninja.nome = "Naruto Uzumaki";
+        
+
+    }
+}
+
+
+-> para criar uma classe abstrata você colocar no public class -> "public abstract class"
+-> só com isso cria já uma classe abstrata, mas ela não pode criar um  objeto
+
+-> ela é usada para 3 coisas:
+1 - encher o saco
+2 - escalabilidade 
+3 - manutenção
+
+Escalabilidade e manutenção são 2 coisas que andam juntas!!
+
+
+
+-> quando se usa um abstract numa classe principal faz com que ela tenha sub-classes, ( como um guerereiro classe principal, que pode se tornar um paladino ou um tank, ou um lutador.)
+
+
+-> vai obrigar a todos os dev criarem objetos a partir da subs-classes 
+
+
+-> ela serve para organizar seu código e proteger a classes que não queira que crie um objeto partir dele.
+
+código da main: 
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Uzunaki Naruto = new Uzunaki();
+        Naruto.nome = "Naruto Uzumaki";
+
+	 Uchiha Sasuke = new Uchiha();
+        Sasuke.nome = "Sasuke Uchiha";
+
+    }
+}
+
+
+
+O Código abstrato: 
+
+public abstract class Ninja {
+
+    String nome;
+    String aldeia;
+    int idade;
+
+}
+
+
+subclasse Naruto: 
+
+
+public class Naruto extends Ninja{
+
+}
+
+subclasse Uchiha:
+
+public class Naruto extends Ninja{
+
+}
+
+
+
+
+--------------------------------------------------------------------------
+
+-> pode se criar métodos abstratos 
+
+// Métodos abstratos 
+
+
+Código no Ninja.abstract:
+
+public void nomeDoNinja() {
+
+	System.out.println("Meu nome é: " + nome)
+
+}
+
+
+
+ou ir na main e :
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Uzunaki Naruto = new Uzunaki();
+        Naruto.nome = "Naruto Uzumaki";
+
+	 Uchiha Sasuke = new Uchiha();
+        Sasuke.nome = "Sasuke Uchiha";
+	Sasuke.nomeDoNinja();
+
+
+    }
+}
+
+
+-> mas qunado se cia uma classe abstrata, ou métodos abstrato vc não tem corpo, você não tem body
+
+{
+
+	System.out.println("Meu nome é: " + nome)
+
+}
+
+
+
+
+-> tira isso e agr você terá que instanciar obrigatoriamente todas as classes, subclasses 
+
+-> qual a diferença ?
+	-> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
