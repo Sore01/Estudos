@@ -1,0 +1,206 @@
+aula 17/09/2026
+
+
+
+
+
+após apresentação do código:
+
+
+da pra usar :
+
+ public void estudar(){
+        System.out.println(nome + " Estudou");
+        setNota(nota + 0.5);
+        System.out.println(nome + " Estudou: " + nota);
+
+
+    }
+
+
+-> usar o set para fazer o mesmo que havia feito antes 
+
+
+
+
+
+
+  public void estudar() {
+        System.out.println(nome + " Estudou");
+
+        if (nota >= 10) {
+            System.out.println(nome + " nota máxima atingida: 10");
+        }
+        else  {
+            setNota(nota + 0.5);
+            System.out.println(nome + nota);
+        }
+
+    }
+
+
+
+
+
+
+lição de casa : 
+
+- estudar boolian
+
+- oque é o whille e para que ele serve.
+
+
+
+- entender o conceito básico.
+
+- ver mais this.
+
+- reforçar o básico ( deixar ele mais consolidado) 
+
+- não só teoria mas pegar pratica
+
+- entender o nível de detalhe
+
+- começo de programação é logica
+
+- estou começando a pegar POO
+
+
+Código final : 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Aluno aluno1 = new Aluno();
+
+        aluno1.setNome("Margarida");
+        aluno1.setNota(8.5);
+
+        System.out.println(aluno1.getNome());
+        System.out.println(aluno1.getNota());
+
+
+        Aluno aluno2 = new Aluno();
+
+        aluno2.setNome("Joao");
+        aluno2.setNota(5.0);
+
+        System.out.println(aluno2.getNome());
+        System.out.println(aluno2.getNota());
+
+
+        Aluno aluno3 = new Aluno();
+
+        aluno3.setNome("Moyses");
+        aluno3.setNota(3.0);
+
+        System.out.println(aluno3.getNome());
+        System.out.println(aluno3.getNota());
+
+
+        aluno1.estudar();
+        aluno1.estudar();
+        aluno1.estudar();
+        aluno1.estudar();
+
+
+
+        aluno2.estudar();
+        aluno3.estudar();
+
+
+    System.out.println(aluno1.getNome()+" Tirou a nota "+aluno1.getNota());
+    System.out.println(aluno2.getNome()+" Tirou a nota "+aluno2.getNota());
+    System.out.println(aluno3.getNome()+" Tirou a nota "+aluno3.getNota());
+
+
+    }
+}
+
+class Aluno {
+
+    private String nome;
+    private double nota;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getNota() {
+        return nota;
+    }
+
+    public void estudar() {
+        System.out.println(nome + " Estudou");
+
+        if (nota >= 10) {
+            System.out.println(nome + " nota máxima atingida: 10");
+        }
+        else  {
+            setNota(nota + 0.5);
+            System.out.println(nome + nota);
+        }
+
+    }
+
+    public void setNota(double nota) {
+        this.nota = nota;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
