@@ -1,0 +1,117 @@
+public class Main extends Aluno{
+
+    public static void main(String[] args){
+
+        Aluno aluno1 = new Aluno();
+
+        aluno1.nome = "Ana Beatriz";
+        aluno1.idade = 17;
+        aluno1.nota = 8.0;
+        aluno1.frequencia = 92;
+        aluno1.matricula = true;
+        aluno1.bolsista = true;
+
+        Aluno aluno2 = new Aluno();
+
+        aluno2.nome = "Lucas Furtado";
+        aluno2.idade = 18;
+        aluno2.nota = 6.9;
+        aluno2.frequencia = 84;
+        aluno2.matricula = true;
+        aluno2.bolsista = true;
+
+        Aluno aluno3 = new Aluno();
+
+        aluno3.nome = "Mariana Alencar";
+        aluno3.idade = 17;
+        aluno3.nota = 7.0;
+        aluno3.frequencia = 75;
+        aluno3.matricula = true;
+        aluno3.bolsista = true;
+
+        Aluno aluno4 = new Aluno();
+
+        aluno4.nome = " Rafael Quirino";
+        aluno4.idade = 19;
+        aluno4.nota = 6.0;
+        aluno4.frequencia = 95;
+        aluno4.matricula = true;
+        aluno4.bolsista = false;
+
+        Aluno aluno5 = new Aluno();
+
+        aluno5.nome = "Julia Peixoto";
+        aluno5.idade = 17;
+        aluno5.nota = 5.0;
+        aluno5.frequencia = 70;
+        aluno5.matricula = true;
+        aluno5.bolsista = false;
+
+        Aluno aluno6 = new Aluno();
+
+        aluno6.nome = "Thiago Bernades";
+        aluno6.idade = 20;
+        aluno6.nota = 0.5;
+        aluno6.frequencia = 40;
+        aluno6.matricula = false;
+        aluno6.bolsista = false;
+
+
+
+    }
+
+
+    if (bolsista) {
+        if (nota >= 7){
+            System.out.println("Bolsa mantida!");
+        } else {
+            System.out.println("Bolsa em risco.");
+        }
+    }else {
+        System.out.println("Aluno não tem bolsa");
+    }
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+public class Aluno {
+
+    public String nome;
+    public int idade;
+    public double nota;
+    public int frequencia;
+    public boolean matricula;
+    public boolean bolsista;
+
+    boolean notaOk = nota >= 7;
+    boolean frequenciaOk = frequencia >= 75;
+
+    public boolean estaAprovado() {
+        return nota >= 7;
+    }
+
+
+    public void receberBolsa() {
+        bolsista = true;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
